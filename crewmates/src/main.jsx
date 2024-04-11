@@ -10,29 +10,33 @@ import Create from './components/Create.jsx'
 import Update from './components/Update.jsx'
 import Home from './components/Home.jsx'
 
-const router = createBrowserRouter([{
-  path: '/',
-  element: <App />,
-  errorElement: <NotFoundPage />,
-  children: [
-    {
-      path: '/home',
-      element: <Home />,
-    }, {
-      path: '/teammate/:id',
-      element: <Details />,
-    }, {
-      path: '/update/:id',
-      element: <Update />,
-    }, {
-      path: '/gallery',
-      element: <Gallery />,
-    }, {
-      path: '/create',
-      element: <Create />,
-    },
-  ],
-}]);
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    errorElement: <NotFoundPage />,
+    children: [
+      {
+        path: '/home',
+        element: <Home />,
+      }, {
+        path: '/create',
+        element: <Create />,
+      }, {
+        path: '/gallery',
+        element: <Gallery />,
+      }, {
+        path: '/update/:id',
+        element: <Update />,
+      }, {
+        path: '/teammate/:id',
+        element: <Details />,
+      },
+    ],
+  },
+]);
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

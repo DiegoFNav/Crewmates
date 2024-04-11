@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 function Home() {
 
   return (
     <>
-    <div className="home_container">
+    <div className="page">
       <h2>Home Page</h2>
     </div>
     </>

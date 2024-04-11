@@ -1,14 +1,19 @@
-import { useState } from 'react'
 import './App.css'
-import { Link } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 
 function App() {
 
   return (
     <>
-    <div className='side_bar'>
-      <Link to={'/home'}><h2>Home</h2></Link>
-
+    <div className='main_container'>
+      <div className='side_bar'>
+        <h2><Link to="/home">Home</Link></h2>
+        <h2><Link to="/create">Create</Link></h2>
+        <h2><Link to="/gallery">Gallery</Link></h2>
+      </div>
+      <div className='page_container'>
+        <Outlet />
+      </div>
     </div>
     </>
   )
