@@ -5,7 +5,9 @@ function Home() {
   return (
     <>
     <div className="page">
-      <h2>Home Page</h2>
+      <h1>Final Fantasy Team Builder</h1>
+      <img className="team_pic" src="/team.jpg" alt="" />
+      <h3>Create your own Final Fantasy team here!</h3>
     </div>
     </>
   )
