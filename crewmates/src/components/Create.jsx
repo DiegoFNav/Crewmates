@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { redirect } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 function Create({ classImages, classStats, supabase }) {

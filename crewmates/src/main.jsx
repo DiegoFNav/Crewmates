@@ -62,10 +62,10 @@ const router = createBrowserRouter([
         element: <Create classImages={classImages} classStats={classStats} supabase={supabase} />,
       }, {
         path: '/gallery',
-        element: <Gallery />,
+        element: <Gallery classImages={classImages} supabase={supabase}/>,
       }, {
         path: '/update/:id',
-        element: <Update />,
+        element: <Update classImages={classImages} classStats={classStats} supabase={supabase} />,
       }, {
         path: '/teammate/:id',
         element: <Details />,

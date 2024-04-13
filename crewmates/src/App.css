@@ -83,3 +83,62 @@
   font-size: 18px; /* Make text bigger */
   border: 2px solid white; /* Add outline */
 }
+
+.gallery {
+  padding: 30px;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card-img-container {
+  height: 70%;
+  overflow: hidden;
+  background-color: white;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+}
+
+.card-details {
+  height: 30%;
+  padding: 10px;
+}
+
+.card h2 {
+  margin: 0;
+}
+
+.character-details {
+  display: flex;
+  flex-direction: row;
+}
+
+.character-left {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+
+.character-right {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+
+.up_button {
+  margin: 15px;
+}
