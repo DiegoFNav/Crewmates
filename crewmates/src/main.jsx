@@ -15,7 +15,7 @@ import { createClient } from '@supabase/supabase-js';
 const ACCESS_KEY = import.meta.env.VITE_APP_ACCESS_KEY;
 // Initialize Supabase client
 const supabaseUrl = 'https://xncubdskexcpwavrvjof.supabase.co';
-const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhuY3ViZHNrZXhjcHdhdnJ2am9mIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTI4NjQ2NDEsImV4cCI6MjAyODQ0MDY0MX0.QohM3xBnAp7rWTrMA-7D9FBqjRaW3qky7cGixRdFF6I";
+const supabaseKey = ACCESS_KEY;
 const supabase = createClient(supabaseUrl, supabaseKey);
 
           
